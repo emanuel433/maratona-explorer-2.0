@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  background-image: linear-gradient(to bottom,#1D976C,#93F9B9 );
+  background-image: linear-gradient(to bottom,#2F2E41,#6c1eb0 );
   font-family: 'Roboto', sans-serif;
   
 }
@@ -39,7 +39,7 @@ img.avatar {
 
 h1 {
   font-size: 32px;
-  color: #13674a;
+  color: #00BFA6;
   margin-top: 24px;
   margin-bottom: 8px;
   
@@ -49,7 +49,7 @@ h1 {
 p { 
 font-family: 'Roboto Mono', monospace;
 font-weight: 400;
-color: #13674a;
+color: #00BFA6 ;
 opacity: 0.8;
 font-size: 18px;
 }
@@ -66,7 +66,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #5D917D ;
+  background: #3071E7;
   color: white;
   text-transform: uppercase;
   font-size: 14px;
@@ -76,13 +76,13 @@ ul li a {
 }
 
 ul li a:hover {
-  background: #4db990;
+  background: #00BFA6;
 }
 
 footer {
   font-weight: 500;
   font-size: 12px;
-  color: #13674a;
+  color: #00BFA6;
   opacity: 0.6;
   transition: opacity 400ms;
 }
@@ -92,5 +92,5 @@ footer:hover {
 }
 
 footer a {
-  color: #13674a;
+  color: #00BFA6;
 }
