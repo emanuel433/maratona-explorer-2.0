@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  background-image: linear-gradient(to bottom,#2F2E41,#6c1eb0 );
+  background: grey;
   font-family: 'Roboto', sans-serif;
   
 }
@@ -37,21 +37,28 @@ img.avatar {
   border: #93F9B9 solid 4px;
 }
 
-h1 {
+.title-rotate {
   font-size: 32px;
-  color: #00BFA6;
+  color: #171b1a;
   margin-top: 24px;
   margin-bottom: 8px;
   
 }
 
+.rotate-words {
+  margin-left: 10px;
+  width: 100%;
+}
 
-p { 
-font-family: 'Roboto Mono', monospace;
-font-weight: 400;
-color: #00BFA6 ;
-opacity: 0.8;
-font-size: 18px;
+.rotate-words span {
+  position: absolute;
+  width: max-content;
+  background-color: #00BFA6;
+  padding: 0 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transform-origin: 10% 75%;
+  animation: rotateWords 12s var(--d) linear infinite;
 }
 
 ul {
@@ -81,6 +88,7 @@ ul li a:hover {
 
 footer {
   font-weight: 500;
+  
   font-size: 12px;
   color: #00BFA6;
   opacity: 0.6;
@@ -93,4 +101,35 @@ footer:hover {
 
 footer a {
   color: #00BFA6;
+}
+.social-grid {
+  width: 20%;
+  display: flex;
+  margin: auto;
+  gap: 12px;
+  opacity: 0.8;
+  margin-top: 10px;
+  
+}
+
+
+
+
+@keyframes rotateWords {
+  5% {
+    opacity: 1;
+    transform: rotate(-1deg);
+  }
+  10%, 20% {
+    opacity: 1;
+    transform: rotate(3deg);
+  }
+  15% {
+    transform: rotate(-1deg);
+  }
+  25% {
+    opacity: 0;
+    transform: rotate(10deg);
+    transform: translateY(40px);
+  }
 }
