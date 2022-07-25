@@ -133,3 +133,17 @@ footer a {
     transform: translateY(40px);
   }
 }
+
+@media (min-width:700px) {
+  .container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+   
+  }
+.resp {
+  max-width: 100%;
+}
+  
+  
+}
