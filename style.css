@@ -119,6 +119,7 @@ footer a {
 }
 
 .dot {
+  align-items: center;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -153,7 +154,7 @@ footer a {
 }
 
 @keyframes spinner {
-  0% {transform: translateX(20px);}
-  100% {transform: translateX(-20px);}
+  0% {transform: translateY(20px);}
+  100% {transform: translateY(-20px);}
 }
   
